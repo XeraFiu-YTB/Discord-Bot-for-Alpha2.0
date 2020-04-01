@@ -15,6 +15,7 @@ module.exports.run = async (bot, message, args) => {
 
     } else {
         let userID = message.mentions.members.first().id
+        console.log(userID)
         message.members.kick(`${userID}`)
         message.channel.send(`<@userID> kick avec succès`)
     }
@@ -22,5 +23,5 @@ module.exports.run = async (bot, message, args) => {
 
 }
 module.exports.help = {
-    name: "ban"
+    name: "kick"
 }
