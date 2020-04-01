@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
         let userID = message.mentions.members.first().id
         userID = message.guild.members.cache.find(m => m.id == `${userID}`)
         userID.kick()
-        message.channel.send(`<@userID> kick avec succès`)
+        message.channel.send(`<@userID.id> kick avec succès`)
     }
 
 
