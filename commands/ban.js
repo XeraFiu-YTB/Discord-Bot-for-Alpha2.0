@@ -15,7 +15,8 @@ module.exports.run = async (bot, message, args) => {
 
     } else {
         let userID = message.mentions.members.first().id
-        message.members.ban(`${userID}`)
+        userID = message.guild.members.cache.find(m => m.id == `${userID}`)
+        userID.ban()
         message.channel.send(`<@userID> ban avec succès`)
     }
 
