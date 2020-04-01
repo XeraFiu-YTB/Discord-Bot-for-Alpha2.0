@@ -155,5 +155,4 @@ bot.on('messageReactionRemove', async (reaction, user) => {
 
 
 //process.env.TOKEN
-//Njk0NjUxMTYyMjU0NjM5MTc0.XoOxUw.QsQvB0sZ7B2_bdFdK7VlbXhbQ7w
 bot.login(process.env.TOKEN);
